@@ -1,45 +1,26 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="周熙皓的个人设计作品集。工业设计专业大三学生，信息体验设计方向。">
-  <title>物与界面 · 周熙皓的个人设计作品集</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="cover.js"></script>
-</head>
-<body>
-  <a class="skip" href="#main">跳到正文</a>
-  <header class="mast wrap">
-    <a class="brand" href="index.html" aria-label="物与界面，首页"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>物与界面</a>
-    <nav aria-label="主导航">
-      <a href="index.html" aria-current="page">首页</a>
-      <a href="work.html">作品</a>
-      <a href="about.html">关于</a>
-    </nav>
-  </header>
-  <main id="main" class="wrap">
-    <section class="cover" aria-labelledby="portfolio-title">
-      <div class="cover-copy">
-        <p class="edition"><span></span>个人设计作品集 <i>/</i> 2026</p>
-        <h1 id="portfolio-title">物与界面</h1>
-        <p class="signature" lang="en">Objects <span>&amp;</span> Interfaces</p>
-        <div class="bio"><p><strong>周熙皓</strong><i aria-hidden="true"> / </i>工业设计专业大三学生</p><p>信息体验设计方向</p></div>
-        <a class="action" href="about.html">关于我 <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="exhibit">
-        <div class="drawing" role="img" aria-label="网站封面图形，由一圈蓝色折片组成。立体和平面视图可以切换。">
-          <img class="cover-still" src="cover.webp" width="960" height="800" alt="">
-          <canvas class="sculpture" aria-hidden="true"></canvas>
-        </div>
-        <div class="figure-note"><span>封面形态</span><div class="modes" role="group" aria-label="封面视图" hidden>
-          <button type="button" data-mode="volume" aria-pressed="true">立体</button><button type="button" data-mode="plan" aria-pressed="false">平面</button>
-        </div></div>
-      </div>
-    </section>
-    <a class="index-link" href="work.html"><div><small lang="en">Work index</small><h2>作品目录</h2></div><span class="index-status">整理中</span><span class="round-arrow" aria-hidden="true">↗</span></a>
-  </main>
-  <footer class="footer wrap"><span>周熙皓 <i>/</i> 个人设计作品集</span><span lang="en">Portfolio 2026</span></footer>
-</body>
-</html>
+<html lang="zh-CN" id="top"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f7f2">
+<meta name="description" content="周熙皓的个人设计作品集，涵盖产品设计、UI / UX 与文创设计。"><title>首页 · 物与界面</title>
+<link rel="stylesheet" href="style.css"><script defer src="form-study.js"></script><script defer src="cover.js"></script></head>
+<body><a class="skip" href="#main">跳到正文</a>
+<header class="mast wrap"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>物与界面</a>
+<nav aria-label="主导航"><a href="index.html" aria-current="page">首页</a><a href="work.html">设计方向</a><a href="about.html">关于我</a></nav></header>
+<main class="wrap" id="main"><section class="home-hero" aria-labelledby="hero-title">
+<div class="hero-text"><p class="kicker micro" lang="en">Design portfolio &nbsp;/&nbsp; 2026</p>
+<h1 class="hero-title" id="hero-title" lang="en">Objects <em>&amp;</em><br>Interfaces<span class="period">.</span></h1>
+<p class="hero-bio">周熙皓 <span> / 个人设计作品集</span><br><span>工业设计专业大三学生 · 信息体验设计方向</span></p>
+<div class="actions">
+  <a class="primary browse" href="#disciplines"><span>浏览设计方向</span><span class="leaves" aria-hidden="true"><i></i><i></i><i></i></span></a>
+</div></div>
+<figure class="dial-stage" aria-label="交互封面：叠片环"><figcaption class="art-label">叠片环 <span lang="en">/ FORM STUDY</span></figcaption><span class="axis" hidden>拖动旋转</span>
+<div class="shadow" aria-hidden="true"></div><img class="art-fallback" src="folded-ring.webp" alt="银灰与钴蓝薄片组成的扭转圆环">
+<canvas class="art-canvas" hidden aria-hidden="true"></canvas><div class="art-controls" hidden>
+<label class="knob-readout"><span>旋转</span><input id="rotation" type="range" min="0" max="270" step="1" value="45" aria-label="旋转角度"><output id="reading" for="rotation">045°</output></label>
+<div class="switch" role="group" aria-label="叠片环视图"><button data-view="volume" aria-pressed="true">立体</button><button data-view="plan" aria-pressed="false">正视</button></div></div></figure>
+</section>
+<section class="directory" id="disciplines" tabindex="-1" aria-labelledby="discipline-title"><div class="section-head"><div class="section-name"><h2 id="discipline-title">设计方向</h2><span class="english" lang="en">Discipline index</span></div><span class="count">3 个方向</span></div>
+<div class="disc-grid"><a class="disc-card" href="work.html#object"><div aria-hidden="true" class="thumbnail product"><div class="art"><div class="washers"><i class="washer"></i><i class="washer"></i><i class="washer"></i></div></div></div><div class="work-meta"><h3>产品设计</h3><span class="card-plus" aria-hidden="true">+</span></div><span class="english" lang="en">Product design</span></a>
+<a class="disc-card" href="work.html#interaction"><div aria-hidden="true" class="thumbnail interface"><div class="art"><div class="layers"><i class="panel"></i><i class="panel"></i><i class="panel"></i></div></div></div><div class="work-meta"><h3>UI / UX</h3><span class="card-plus" aria-hidden="true">+</span></div><span class="english" lang="en">Interface & experience</span></a>
+<a class="disc-card" href="work.html#culture"><div aria-hidden="true" class="thumbnail culture"><div class="art"><div class="fan"><i style="--a:2.46% 73.23%;--b:3.60% 66.07%;--fold:#da9671"></i><i style="--a:3.60% 66.07%;--b:5.06% 59.11%;--fold:#995538"></i><i style="--a:5.06% 59.11%;--b:6.84% 52.40%;--fold:#cd8864"></i><i style="--a:6.84% 52.40%;--b:8.91% 45.98%;--fold:#9b583b"></i><i style="--a:8.91% 45.98%;--b:11.26% 39.90%;--fold:#da9671"></i><i style="--a:11.26% 39.90%;--b:13.87% 34.20%;--fold:#995538"></i><i style="--a:13.87% 34.20%;--b:16.74% 28.91%;--fold:#cd8864"></i><i style="--a:16.74% 28.91%;--b:19.83% 24.08%;--fold:#9b583b"></i><i style="--a:19.83% 24.08%;--b:23.13% 19.73%;--fold:#da9671"></i><i style="--a:23.13% 19.73%;--b:26.62% 15.91%;--fold:#995538"></i><i style="--a:26.62% 15.91%;--b:30.27% 12.62%;--fold:#cd8864"></i><i style="--a:30.27% 12.62%;--b:34.05% 9.90%;--fold:#9b583b"></i><i style="--a:34.05% 9.90%;--b:37.94% 7.77%;--fold:#da9671"></i><i style="--a:37.94% 7.77%;--b:41.91% 6.23%;--fold:#995538"></i><i style="--a:41.91% 6.23%;--b:45.94% 5.31%;--fold:#cd8864"></i><i style="--a:45.94% 5.31%;--b:50.00% 5.00%;--fold:#9b583b"></i><i style="--a:50.00% 5.00%;--b:54.06% 5.31%;--fold:#da9671"></i><i style="--a:54.06% 5.31%;--b:58.09% 6.23%;--fold:#995538"></i><i style="--a:58.09% 6.23%;--b:62.06% 7.77%;--fold:#cd8864"></i><i style="--a:62.06% 7.77%;--b:65.95% 9.90%;--fold:#9b583b"></i><i style="--a:65.95% 9.90%;--b:69.73% 12.62%;--fold:#da9671"></i><i style="--a:69.73% 12.62%;--b:73.38% 15.91%;--fold:#995538"></i><i style="--a:73.38% 15.91%;--b:76.87% 19.73%;--fold:#cd8864"></i><i style="--a:76.87% 19.73%;--b:80.17% 24.08%;--fold:#9b583b"></i><i style="--a:80.17% 24.08%;--b:83.26% 28.91%;--fold:#da9671"></i><i style="--a:83.26% 28.91%;--b:86.13% 34.20%;--fold:#995538"></i><i style="--a:86.13% 34.20%;--b:88.74% 39.90%;--fold:#cd8864"></i><i style="--a:88.74% 39.90%;--b:91.09% 45.98%;--fold:#9b583b"></i><i style="--a:91.09% 45.98%;--b:93.16% 52.40%;--fold:#da9671"></i><i style="--a:93.16% 52.40%;--b:94.94% 59.11%;--fold:#995538"></i><i style="--a:94.94% 59.11%;--b:96.40% 66.07%;--fold:#cd8864"></i><i style="--a:96.40% 66.07%;--b:97.54% 73.23%;--fold:#9b583b"></i></div></div></div><div class="work-meta"><h3>文创设计</h3><span class="card-plus" aria-hidden="true">+</span></div><span class="english" lang="en">Culture & craft</span></a></div></section>
+</main><footer class="foot wrap"><span>周熙皓 · 个人设计作品集</span><a href="#top">回到顶部</a></footer></body></html>
