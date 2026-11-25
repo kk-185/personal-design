@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Refine 空气净化猫窝 · 物与界面</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../light.css">
+  <link rel="stylesheet" href="case.css">
+  <script defer src="../light.js"></script>
+  <script defer src="case.js"></script>
+</head>
+<body>
+<canvas id="light-field" aria-hidden="true"></canvas>
+<div class="reading-surface" tabindex="-1">
+<a class="skip" href="#main">跳到正文</a>
+<header id="top" class="mast wrap">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>物与界面</a>
+  <div class="edition-tools"><button class="light-toggle" type="button" aria-label="流光效果" aria-pressed="true" hidden><span class="light-signal" aria-hidden="true"></span>流光</button><a class="back-category" href="../work.html#object">产品设计目录 ↗</a></div>
+</header>
+<main class="wrap" id="main">
+  <section id="overview" aria-labelledby="case-title">
+    <div class="cover">
+      <div class="cover-type">
+        <p class="overline"><span class="index-dot" aria-hidden="true"></span>产品设计 <span class="slash">/</span> 宠物家居</p>
+        <h1 id="case-title"><span lang="en">Refine</span>空气净化猫窝</h1>
+        <p class="intro">把猫的休憩区放在上层，把空气净化与日常清理收进底座。</p>
+        <a class="read-case" href="#construction">看结构与样机<span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-plate">
+        <div class="orbits" aria-hidden="true"></div>
+        <img class="hero-object" src="assets/hero.webp" width="1380" height="920" fetchpriority="high" alt="蓝色弧形软垫环抱织物卧面，白色机身侧面嵌有触控屏。">
+        <figcaption><span lang="en">Air-purifying cat lounge</span><span>展板主视觉 · 样机实拍经 AI 抠图</span></figcaption>
+      </figure>
+    </div>
+    <dl class="project-facts" id="project-facts" aria-label="项目信息">
+      <div class="author-role">
+        <dt>周熙皓的分工</dt>
+        <dd>材料与结构设计、建模及打印对接<br>手机 App 界面设计、产品展板设计</dd>
+      </div>
+      <div>
+        <dt>项目性质</dt>
+        <dd>团队参赛概念设计</dd>
+      </div>
+      <div>
+        <dt>产品尺寸<span class="fact-source">（展板标注）</span></dt>
+        <dd class="dimensions">600 × 473 × 286 <span>mm</span></dd>
+      </div>
+    </dl>
+  </section>
+  <section id="construction" class="chapter" aria-labelledby="construction-title">
+    <header class="chapter-heading"><h2 id="construction-title">结构与样机</h2><span class="serif" lang="en">Form &amp; construction</span></header>
+    <div class="split technical">
+      <figure class="explosion"><img loading="lazy" src="assets/structure.webp" alt="新版结构分解示意，软垫、主机外壳、圆形滤网与风机、底座和轮组纵向展开。"><figcaption>新版结构分解 <span>展板图解</span></figcaption></figure>
+      <div class="copy"><h3>上面休憩，<br>下面净化。</h3><p>围垫与猫抓垫构成接触面。往下看，壳体、圆形复合滤网、风机和底座依次排开；侧面留给通风格栅和触控屏。</p>
+        <dl class="parts"><div><dt>接触面</dt><dd>弧形软垫 · 织物猫抓垫</dd></div><div><dt>净化层</dt><dd>复合滤网 · 净化风机</dd></div><div><dt>维护与移动</dt><dd>后部抽拉框 · 底部轮组</dd></div></dl>
+        <details class="old-model"><summary>对照初赛结构稿</summary><img loading="lazy" src="assets/structure-early.webp" alt="初赛灰色模型的爆炸图，可见方形层板与独立风机。"><p>初赛图里的方形层板与新版的圆形滤网，呈现了两轮不同的内部分层方案。</p></details>
+      </div>
+    </div>
+    <div class="material-study">
+      <figure><img loading="lazy" src="assets/cushion.webp" alt="卧面局部：浅色编织垫嵌在蓝色软包内圈，两者与白色外壳分层。"><figcaption>上缘与卧垫 <span>样机实拍局部</span></figcaption></figure>
+      <div><h3>从打印机身到定制猫抓板</h3><p>我们用白色聚合树脂打印猫窝样机，另外订购了两块定制猫抓板，放在上方作为猫的休憩和抓挠面。照片里可以看到，浅色抓板嵌在蓝色围边内。</p><p class="material-note">参赛方案为围垫提出了织物面套与柔性 PU 海绵；上图展示实际样机的装配外观。</p></div>
+    </div>
+    <div class="photo-study">
+      <div class="gallery-heading"><div><h3>绕样机看一圈</h3><p>新版打印模型 · 摄影实拍</p></div></div>
+      <div class="switcher gallery" data-switch>
+        <div class="choices" role="group" aria-label="样机实拍角度" hidden><button type="button" data-show="photo-screen">侧屏面</button><button type="button" data-show="photo-grille">格栅面</button><button type="button" data-show="photo-front">正面</button><button type="button" data-show="photo-rear">背面</button></div>
+        <figure id="photo-screen" data-panel><a class="enlarge" href="assets/photo-screen.webp" aria-label="放大侧屏面实拍"><img loading="lazy" src="assets/photo-screen.webp" width="1600" height="1067" alt="新版打印模型侧屏面实拍"><span aria-hidden="true">↗</span></a><figcaption><b>侧屏面</b> 斜前方的实拍里，侧屏、前缘的凹口和卧垫都在同一视野内。</figcaption></figure>
+        <figure id="photo-grille" data-panel><a class="enlarge" href="assets/photo-grille.webp" aria-label="放大格栅面实拍"><img loading="lazy" src="assets/photo-grille.webp" width="1600" height="1067" alt="新版打印模型格栅面实拍"><span aria-hidden="true">↗</span></a><figcaption><b>格栅面</b> 转到另一侧，可以看到通风格栅占据壳体侧面，蓝色内衬沿上缘包覆。</figcaption></figure>
+        <figure id="photo-front" data-panel><a class="enlarge" href="assets/photo-front.webp" aria-label="放大正面实拍"><img loading="lazy" src="assets/photo-front.webp" width="1600" height="1067" alt="新版打印模型正面实拍"><span aria-hidden="true">↗</span></a><figcaption><b>正面</b> 从正面看，前缘低于两侧包边，外壳与净化底座之间留有清晰的分层。</figcaption></figure>
+        <figure id="photo-rear" data-panel><a class="enlarge" href="assets/photo-rear.webp" aria-label="放大背面实拍"><img loading="lazy" src="assets/photo-rear.webp" width="1600" height="1067" alt="新版打印模型背面实拍"><span aria-hidden="true">↗</span></a><figcaption><b>背面</b> 背面视角可见壳体下缘与底座的接缝。展板中的后部抽拉框用于解释清理路径。</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section id="interface" class="chapter" aria-labelledby="interface-title">
+    <header class="chapter-heading"><h2 id="interface-title">设备与手机</h2><span class="serif" lang="en">Interface studies</span></header>
+    <div class="device-intro"><div><h3>在窝边调节，<br>在手机上回看。</h3><p>在界面方案中，使用者可以从侧屏底部调节风速。手机承担另一类任务：看空气随时间的变化，或在需要时查看滤网寿命。</p></div><figure><img loading="lazy" src="assets/side-ui.webp" alt="设备侧屏设计稿，下方并排显示电源、童锁、风速、定时与滤网。"><figcaption>设备侧屏设计稿 <span>读数为界面示例</span></figcaption></figure></div>
+    <div class="switcher ui-study" data-switch>
+      <div class="ui-head"><h3>手机界面演进</h3><div class="choices" role="group" aria-label="选择手机界面任务" hidden><button type="button" data-show="ui-device">设备</button><button type="button" data-show="ui-air">空气</button><button type="button" data-show="ui-filter">滤网</button><button type="button" data-show="ui-mine">我的</button></div></div>
+      <div id="ui-device" class="comparison" data-panel>
+        <div class="compare-copy"><span class="overline">手机 App / 设备</span><h4>从空气读数进入设备</h4><p>初赛稿将 PM2.5 读数放在页面中央。新版先显示猫窝与当前状态，再从设备卡进入控制。</p><a href="assets/early-1.webp" class="text-link">查看初赛另一张设备页 ↗</a></div>
+        <figure><a href="assets/early-2.webp" aria-label="查看初赛设备页原图"><img src="assets/early-2.webp" loading="lazy" alt="橙白配色的初赛设备界面"></a><figcaption>初赛稿 <span>设备</span></figcaption></figure>
+        <figure><a href="assets/new-05.webp" aria-label="查看新版设备页原图"><img src="assets/new-05.webp" loading="lazy" alt="新版蓝白配色的设备界面"></a><figcaption>新版展板 <span>设备</span></figcaption></figure>
+      </div>
+      <div id="ui-air" class="comparison" data-panel>
+        <div class="compare-copy"><span class="overline">手机 App / 空气</span><h4>把一个读数放回时间里</h4><p>两版都用曲线呈现空气变化。新版把读数、趋势和时段放进同一页，便于对照查看。</p></div>
+        <figure><a href="assets/early-3.webp" aria-label="查看初赛空气页原图"><img src="assets/early-3.webp" loading="lazy" alt="橙白配色的初赛空气界面"></a><figcaption>初赛稿 <span>空气</span></figcaption></figure>
+        <figure><a href="assets/new-06.webp" aria-label="查看新版空气页原图"><img src="assets/new-06.webp" loading="lazy" alt="新版蓝白配色的空气界面"></a><figcaption>新版展板 <span>空气</span></figcaption></figure>
+      </div>
+      <div id="ui-filter" class="comparison" data-panel>
+        <div class="compare-copy"><span class="overline">手机 App / 滤网</span><h4>让维护有一个固定入口</h4><p>初赛稿用橙色圆环提示滤网寿命。新版延续寿命提示，并配上设备图，让维护信息和具体猫窝对应。</p></div>
+        <figure><a href="assets/early-4.webp" aria-label="查看初赛滤网页原图"><img src="assets/early-4.webp" loading="lazy" alt="橙白配色的初赛滤网界面"></a><figcaption>初赛稿 <span>滤网</span></figcaption></figure>
+        <figure><a href="assets/new-07.webp" aria-label="查看新版滤网页原图"><img src="assets/new-07.webp" loading="lazy" alt="新版蓝白配色的滤网界面"></a><figcaption>新版展板 <span>滤网</span></figcaption></figure>
+      </div>
+      <div id="ui-mine" class="comparison" data-panel>
+        <div class="compare-copy"><span class="overline">手机 App / 我的</span><h4>把个人设置收在一起</h4><p>对照两版的个人页，可以看到头像、个人设置和提醒入口如何与设备操作分开。</p></div>
+        <figure><a href="assets/early-5.webp" aria-label="查看初赛我的页原图"><img src="assets/early-5.webp" loading="lazy" alt="橙白配色的初赛我的界面"></a><figcaption>初赛稿 <span>我的</span></figcaption></figure>
+        <figure><a href="assets/new-08.webp" aria-label="查看新版我的页原图"><img src="assets/new-08.webp" loading="lazy" alt="新版蓝白配色的我的界面"></a><figcaption>新版展板 <span>我的</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section id="board" class="chapter last" aria-labelledby="board-title">
+    <header class="chapter-heading"><h2 id="board-title">场景与展板</h2><span class="serif" lang="en">In context</span></header>
+    <div class="context-grid"><figure class="scene"><img loading="lazy" src="assets/scene.webp" alt="生成画面中，一只橘猫躺在客厅窗边的蓝白猫窝里。"><figcaption>客厅中的 Refine <span>AIGC 场景效果图</span></figcaption></figure>
+    <div class="board-card"><a href="assets/board.webp" aria-label="查看可放大的参赛展板"><img src="assets/board-thumb.webp" loading="lazy" alt="方案二参赛展板缩略图"></a><div><h3>参赛展板</h3><p>方案二将三视图、结构拆解、使用故事板和四个手机页面编排在一张纵向展板里。</p><a class="text-link" href="assets/board.webp">放大展板 ↗</a><a class="text-link subtle" href="https://www.figma.com/design/A4vzxJMKLvslGptK25gPhz?node-id=44-179" target="_blank" rel="noopener">Figma 源画板 ↗</a></div></div></div>
+  </section>
+</main></div>
+<footer class="navigation-bar"><div class="navigation-inner wrap"><a class="back-top" href="#top"><span aria-hidden="true">↑</span> 回到顶部</a><nav class="node-nav" aria-label="案例章节"><a href="#overview" aria-current="location"><i class="node-icon" aria-hidden="true"></i><span>概览</span></a><a href="#construction"><i class="node-icon" aria-hidden="true"></i><span>结构</span></a><a href="#interface"><i class="node-icon" aria-hidden="true"></i><span>界面</span></a><a href="#board"><i class="node-icon" aria-hidden="true"></i><span>展板</span></a></nav></div></footer>
+</body></html>

@@ -4,7 +4,7 @@
 
 **[在线浏览《物与界面》](https://wuyujiemian.pages.dev/)**
 
-目前可体验首页、三个设计方向的索引和关于页。每个方向都可以展开案例提纲，第一篇完整的课程项目案例待补。
+目前可体验首页、三个设计方向的索引和关于页。产品设计已收录首篇团队参赛案例「Refine 空气净化猫窝」，可从产品设计目录进入，查看树脂打印样机、定制猫抓板和两版手机界面。
 
 [![《物与界面》首页实拍。右侧是可旋转的银蓝叠片环，下方以叠片、层板和折扇标出三个设计方向。](docs/home-preview.webp)](https://wuyujiemian.pages.dev/)
 
@@ -12,7 +12,7 @@
 
 | 设计方向 | 我关注的问题 | 案例将呈现的材料 |
 | --- | --- | --- |
-| [产品设计](https://wuyujiemian.pages.dev/work#object) | 手拿起一个物件时，哪些尺寸和材料影响操作？ | 手部动作、草模尺寸、实物打样 |
+| [产品设计](https://wuyujiemian.pages.dev/work#object) | 手拿起一个物件时，哪些尺寸和材料影响操作？ | [Refine 案例源码](dist/refine/index.html)、样机实拍与界面设计 |
 | [UI / UX](https://wuyujiemian.pages.dev/work#interaction) | 用户怎样找到下一步，又怎样知道任务完成了？ | 任务路径、界面取舍、可点击原型 |
 | [文创设计](https://wuyujiemian.pages.dev/work#culture) | 一个纹样或地方故事怎样进入日常器物？ | 文化来源、图形转译、载体打样 |
 
