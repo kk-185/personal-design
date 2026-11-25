@@ -1,0 +1,79 @@
+body { isolation: isolate; }
+#light-field {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.edition-tools { display: flex; align-items: center; gap: clamp(12px, 2vw, 30px); }
+.light-toggle {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 5px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 13px/1.2 var(--sans);
+}
+.light-toggle[aria-pressed="true"] { color: #353da6; }
+.light-signal {
+  display: inline-block;
+  width: 17px;
+  height: 11px;
+  border-block: 1px solid currentColor;
+  transform: skew(-32deg);
+  background: linear-gradient(0deg,transparent 42%,currentColor 44% 54%,transparent 56%);
+}
+.light-toggle[aria-pressed="false"] .light-signal { opacity: .55; background: transparent; }
+html[data-light="on"] .dial-stage { background: transparent; }
+html[data-light="on"] .dial-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #f5f6f2 url("study-field.webp") center / cover no-repeat;
+  opacity: .63;
+  pointer-events: none;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html[data-light="on"][data-mouse] body { cursor: url("nib.png") 3 3, auto; }
+  html[data-light="on"][data-mouse] :is(a,button,summary) { cursor: url("nib-link.png") 3 3, pointer; }
+  html[data-light="on"][data-mouse] :is(.work-panel p,.case-block p,.author-facts p) { cursor: text; }
+  html[data-light="on"][data-mouse] .hero-title:hover {
+    background: radial-gradient(ellipse 70px 55px at var(--nib-x, 50%) var(--nib-y, 50%), #5263be 0%, #2d3871 52%, var(--ink) 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  html[data-light="on"][data-mouse] .disc-card .thumbnail::after {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    color: var(--blue);
+    background:
+      linear-gradient(currentColor 0 0) top left / 14px 1px,
+      linear-gradient(currentColor 0 0) top left / 1px 14px,
+      linear-gradient(currentColor 0 0) bottom right / 14px 1px,
+      linear-gradient(currentColor 0 0) bottom right / 1px 14px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1.03);
+    transition: opacity 150ms ease-out, transform 180ms ease-out;
+    pointer-events: none;
+  }
+  html[data-light="on"][data-mouse] .disc-card:hover .thumbnail::after { opacity: 1; transform: none; }
+}
+@media (max-width: 370px) {
+  .edition-tools { gap: 8px; }
+  .light-toggle { gap: 5px; padding: 0; }
+}
+@media print, (forced-colors: active) {
+  #light-field, .light-toggle { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .light-toggle { display: none; }
+}
